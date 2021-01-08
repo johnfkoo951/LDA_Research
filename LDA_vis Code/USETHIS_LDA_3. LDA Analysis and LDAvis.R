@@ -2,6 +2,10 @@
 
 K = 34
 G <- 10000   # Default value of Iteration = 2000
+<<<<<<< HEAD
+=======
+alpha <- 0.75
+>>>>>>> ec11a5517ac90df6458dcb9eea02f07c34913792
 alpha <- 1.5
 
 #m = LDA(dtm, method = "Gibbs", k = K,  control = list(iter=G, alpha = alpha))
@@ -38,8 +42,13 @@ m = LDA(dtm, method = "Gibbs", k = K,  control = list(alpha=50/K,
         mc.cores=8)
 
 ### Model Save
+<<<<<<< HEAD
 LDA_Model_n1321_k34_R10s <- m
 m <- LDA_Model_n1321_k34_R04s
+=======
+LDA_Model_n1321_k34_R07s <- m
+
+>>>>>>> ec11a5517ac90df6458dcb9eea02f07c34913792
 
 ##############################################################################
 ### LDA Visualization ###
@@ -63,7 +72,11 @@ json = createJSON(phi = phi,
                   term.frequency = term.freq)
 serVis(json)
 
+<<<<<<< HEAD
 serVis(json, out.dir = '/Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_Research/Results_LDAvis/jan8_n1321_k34_R10s', open.browser = FALSE)
+=======
+serVis(json, out.dir = '/Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_vis/Results_LDAvis/jan8_n1321_k34_R07s', open.browser = FALSE)
+>>>>>>> ec11a5517ac90df6458dcb9eea02f07c34913792
 
 #serVis(json, out.dir = 'vis', open.browser = FALSE)
 #serVis(json, out.dir='LDAvis_20201229_k33_a1.5', open.browser=FALSE)
